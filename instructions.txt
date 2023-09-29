@@ -1,5 +1,18 @@
-Type in your name
+import java.util.Scanner;
 
-Type in your project
+class NickInstructions {
+    public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
 
-Give a math equation
+    System.out.println("Type in your name: ");
+    String name = s.nextLine();
+
+    System.out.println("Type in your project: ");
+    String project = s.nextLine();
+    
+    System.out.println("Give a math addition equation: ");
+    String equation = s.nextLine();
+
+    System.out.println(name + "'s Project: " + project + "\n" + equation + " = " + (Integer.parseInt(equation.substring(0, equation.indexOf("+")) + Integer.parseInt(equation.substring(equation.indexOf("+")+1));
+  }
+}
